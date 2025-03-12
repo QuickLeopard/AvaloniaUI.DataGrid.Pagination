@@ -5,7 +5,7 @@
   - PageSize - количество отображемых строк на одной странице
   - NumPageButtons - количество отображаемых кнопок для быстрого перехода на страницы
 
-Пример кнопок пагинации:
+Пример кнопок пагинации(5 кнопок для быстрого перехода на страницы, по номеру страницы):
 
 ![alt text](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/Images/Pagination.png)
 
