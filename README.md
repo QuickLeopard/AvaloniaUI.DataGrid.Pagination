@@ -12,7 +12,7 @@ _PaginatedDataGrid_ отображает внизу DataGrid кнопки First(
 
 ![alt text](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/Images/Pagination.png)
 
-### 2. Для генерации данных для таблицы, необходимо реализовать ReactiveUI команду _GenerateTradeHistoryCommand_, через DI сервис _HistoryGeneratorService_(в шаблоне сервис имеет реализацию интерфейса IHistoryService в виде заглушки, возвращающей пустые данные)
+### 2. Для генерации данных для таблицы, необходимо реализовать ReactiveUI команду _GenerateTradeHistoryCommand_, через DI сервис _HistoryGeneratorService_(в шаблоне сервис имеет реализацию интерфейса [_IHistoryService_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Interfaces/IHistoryService.cs) в виде заглушки, возвращающей пустые данные)
 #### Модель данных _HistroyPosition_ для тестирования генерируется случайным образом, значение свойств модели генерируются следующим образом:
 - PosId -> GUID
 - Ticker -> случайно выбранный элемент из ["BTCUSDT", "ETHUSDT", "XRPUSDT", "SOLUSDT", "DOGEUSDT"]
