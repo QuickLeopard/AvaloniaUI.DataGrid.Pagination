@@ -1,6 +1,6 @@
 # Техническое задание на разработку Desktop приложения
 
-### 1. Используя AvaloniaUI + ReactiveUI разработать UserControl PaginatedDataGrid, использующий пагинацию, для DataGrid.
+### 1. Используя AvaloniaUI + ReactiveUI + SOLID + DI разработать UserControl PaginatedDataGrid, использующий пагинацию, для DataGrid.
 #### Настраиваемые свойства PaginatedDataGrid
   - PageSize - количество отображемых строк на одной странице
   - NumPageButtons - количество отображаемых кнопок для быстрого перехода на страницы, допустимый диапазон от 3 до 10
