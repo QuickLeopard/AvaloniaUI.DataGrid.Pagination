@@ -15,10 +15,10 @@ _PaginatedDataGrid_ отображает внизу DataGrid кнопки First(
 ### 2. Для генерации данных для таблицы, необходимо реализовать ReactiveUI команду _GenerateTradeHistoryCommand_, через DI сервис [_HistoryGeneratorService_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Services/HistoryGeneratorService.cs)(в шаблоне сервис имеет реализацию интерфейса [_IHistoryService_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Interfaces/IHistoryService.cs) в виде заглушки, возвращающей пустые данные)
 #### Модель данных _HistroyPosition_ для тестирования генерируется случайным образом, значение свойств модели генерируются следующим образом:
 - PosId -> GUID
-- Ticker -> случайно выбранный элемент из ["BTCUSDT", "ETHUSDT", "XRPUSDT", "SOLUSDT", "DOGEUSDT"]
-- Side -> случайно выбранный элемент BUY или SELL
-- Quantity -> случайно выбранная величина из диапазона: [1..1000]
-- OpenPrice -> случайно выбранная величина из диапазона: [1..100]
-- ClosePrice -> случайно выбранная величина из диапазона: [1..100]
-- CloseTime -> DateTime.UtcNow.AddMinutes (-x), где x = случайно выбранная величина из диапазона: [1..100]
-- OpenTime -> CloseTime.AddMinutes (-60)
+- Ticker -> случайно выбранный элемент из _["BTCUSDT", "ETHUSDT", "XRPUSDT", "SOLUSDT", "DOGEUSDT"]_
+- Side -> случайно выбранный элемент _BUY или SELL_
+- Quantity -> случайно выбранная величина из диапазона: _[1..1000]_
+- OpenPrice -> случайно выбранная величина из диапазона: _[1..100]_
+- ClosePrice -> случайно выбранная величина из диапазона: _[1..100]_
+- CloseTime -> ```DateTime.UtcNow.AddMinutes (-x),``` где x = случайно выбранная величина из диапазона: _[1..100]_
+- OpenTime -> ```CloseTime.AddMinutes (-60)```
