@@ -10,7 +10,7 @@ _PaginatedDataGrid_ отображает внизу DataGrid кнопки First(
 
 Пример кнопок пагинации(5 кнопок для быстрого перехода на страницы, по номеру страницы):
 
-![alt text](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/Images/Pagination.png)
+->![alt text](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/Images/Pagination.png)<-
 
 ### 2. Для генерации данных для таблицы, необходимо реализовать ReactiveUI команду [_GenerateTradeHistoryCommand_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/ViewModels/MainWindowViewModel.cs#GenerateTradeHistoryCommand), которая генерирует случайное количество строк данных(в диапазоне от 50 до 200) для DataGrid, через DI сервис [_HistoryGeneratorService_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Services/HistoryGeneratorService.cs)(в шаблоне сервис имеет реализацию интерфейса [_IHistoryService_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Interfaces/IHistoryService.cs) в виде заглушки, возвращающей пустые данные)
 #### Модель данных [_HistoryPosition_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Models/HistoryPosition.cs) для тестирования генерируется случайным образом с помощью библиотеки [Bogus](https://github.com/bchavez/Bogus), значение свойств модели генерируются следующим образом:
