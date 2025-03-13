@@ -22,3 +22,5 @@ _PaginatedDataGrid_ отображает внизу DataGrid кнопки `First
 - ClosePrice -> случайно выбранная величина из диапазона: _[1..100]_
 - CloseTime -> ```DateTime.UtcNow.AddMinutes (-x),``` где x = случайно выбранная величина из диапазона: _[1..100]_
 - OpenTime -> ```CloseTime.AddMinutes (-60)```
+
+### 3. Данные выводить(все свойства [_HistoryPosition_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Models/HistoryPosition.cs)) в виде таблицы в DataGrid. Колонка PnL: значение выводится с точностью до 2-х знаков после запятой.
