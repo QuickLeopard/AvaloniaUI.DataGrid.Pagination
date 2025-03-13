@@ -22,6 +22,7 @@ namespace AvaloniaUI.DataGrid.Pagination.Models
 
         public required decimal Quantity { get; set; }
 
+        // Profit and Loss in %, print with precision: 2 decimals after dot
         public decimal PnL { get => Convert.ToInt32 (Side) * 100m * (ClosePrice - OpenPrice) / OpenPrice; }
 
         public required DateTime OpenTime { get; set; }
