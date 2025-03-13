@@ -16,7 +16,7 @@ _PaginatedDataGrid_ отображает внизу _DataGrid_ кнопки `Fir
 #### Модель данных [_HistoryPosition_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Models/HistoryPosition.cs) для тестирования генерируется случайным образом с помощью библиотеки [Bogus](https://github.com/bchavez/Bogus), значение свойств модели генерируются следующим образом:
 - `PosId` <- GUID
 - `Ticker` <- случайно выбранный элемент из _["BTCUSDT", "ETHUSDT", "XRPUSDT", "SOLUSDT", "DOGEUSDT"]_
-- `Side` <- случайно выбранный элемент _BUY или SELL_
+- `Side` <- случайно выбранный элемент [_BUY_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Enums/PositionSide.cs#BUY) или [_SELL_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Enums/PositionSide.cs#SELL)
 - `Quantity` <- случайно выбранная величина из диапазона: _[1..1000]_
 - `OpenPrice` <- случайно выбранная величина из диапазона: _[1..100]_
 - `ClosePrice` <- случайно выбранная величина из диапазона: _[1..100]_
