@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace AvaloniaUI.DataGrid.Pagination.Interfaces
 {
-    public interface IHistoryService
+    public interface IHistoryLoader
     {
 
-        public Task<IEnumerable<HistoryPosition>> GenerateHistoryPositionsAsync ();
+        public Task<IEnumerable<HistoryPosition>> LoadHistoryPositionsAsync ();
 
     }
 }
