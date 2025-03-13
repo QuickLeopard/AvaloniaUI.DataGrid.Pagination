@@ -14,13 +14,13 @@ _PaginatedDataGrid_ отображает внизу _DataGrid_ кнопки `Fir
 
 ### 2. Для генерации данных для таблицы, необходимо реализовать ReactiveUI команду [_GenerateTradeHistoryCommand_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/ViewModels/MainWindowViewModel.cs#GenerateTradeHistoryCommand), которая генерирует случайное количество строк данных(в диапазоне от 50 до 200) для DataGrid, через DI сервис [_HistoryService_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Services/HistoryService.cs)(необходимо создать класс, который реализует интерфейс [_IHistoryLoader_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Interfaces/IHistoryLoader.cs))
 #### Модель данных [_HistoryPosition_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Models/HistoryPosition.cs) для тестирования генерируется случайным образом с помощью библиотеки [Bogus](https://github.com/bchavez/Bogus), значение свойств модели генерируются следующим образом:
-- `PosId` -> GUID
-- `Ticker` -> случайно выбранный элемент из _["BTCUSDT", "ETHUSDT", "XRPUSDT", "SOLUSDT", "DOGEUSDT"]_
-- `Side` -> случайно выбранный элемент _BUY или SELL_
-- `Quantity` -> случайно выбранная величина из диапазона: _[1..1000]_
-- `OpenPrice` -> случайно выбранная величина из диапазона: _[1..100]_
-- `ClosePrice` -> случайно выбранная величина из диапазона: _[1..100]_
-- `CloseTime` -> ```DateTime.UtcNow.AddMinutes (-x),``` где x = случайно выбранная величина из диапазона: _[1..100]_
-- `OpenTime` -> ```CloseTime.AddMinutes (-60)```
+- `PosId` <- GUID
+- `Ticker` <- случайно выбранный элемент из _["BTCUSDT", "ETHUSDT", "XRPUSDT", "SOLUSDT", "DOGEUSDT"]_
+- `Side` <- случайно выбранный элемент _BUY или SELL_
+- `Quantity` <- случайно выбранная величина из диапазона: _[1..1000]_
+- `OpenPrice` <- случайно выбранная величина из диапазона: _[1..100]_
+- `ClosePrice` <- случайно выбранная величина из диапазона: _[1..100]_
+- `CloseTime` <- ```DateTime.UtcNow.AddMinutes (-x),``` где x = случайно выбранная величина из диапазона: _[1..100]_
+- `OpenTime` <- ```CloseTime.AddMinutes (-60)```
 
 ### 3. Данные выводить(все свойства [_HistoryPosition_](https://github.com/QuickLeopard/AvaloniaUI.DataGrid.Pagination/blob/master/AvaloniaUI.DataGrid.Pagination/Models/HistoryPosition.cs)) в виде таблицы в DataGrid. Колонка `PnL`: значение выводится с точностью до 2-х знаков после запятой.
