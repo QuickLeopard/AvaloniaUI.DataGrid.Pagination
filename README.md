@@ -29,3 +29,4 @@ _PaginatedDataGrid_ отображает внизу _DataGrid_ кнопки `Fir
   - Соблюдение принципов [SOLID](https://ru.wikipedia.org/wiki/SOLID_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5))
   - Реализация концепции [Dependency Injection](https://learn.microsoft.com/ru-ru/dotnet/core/extensions/dependency-injection)
   - Корректное использование [ReactiveUI](https://www.reactiveui.net/)
+  - Следование принципам [MVVM](https://docs.avaloniaui.net/docs/concepts/the-mvvm-pattern/avalonia-ui-and-mvvm)
